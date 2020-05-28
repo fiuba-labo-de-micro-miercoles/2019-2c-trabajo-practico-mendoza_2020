@@ -1,0 +1,253 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-MU U2
+U 1 1 5ECEBF99
+P 6300 2900
+F 0 "U2" H 6050 1350 50  0000 C CNN
+F 1 "ATmega328P-MU" H 6300 1220 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm" H 6300 2900 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 6300 2900 50  0001 C CNN
+	1    6300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5ECEDDC6
+P 7300 4200
+F 0 "R2" H 7370 4246 50  0000 L CNN
+F 1 "R" H 7370 4155 50  0000 L CNN
+F 2 "" V 7230 4200 50  0001 C CNN
+F 3 "~" H 7300 4200 50  0001 C CNN
+	1    7300 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5ECEEB1E
+P 7300 3800
+F 0 "D2" V 7339 3682 50  0000 R CNN
+F 1 "LED" V 7248 3682 50  0000 R CNN
+F 2 "" H 7300 3800 50  0001 C CNN
+F 3 "~" H 7300 3800 50  0001 C CNN
+	1    7300 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5ECF0689
+P 7450 3100
+F 0 "SW2" V 7404 3248 50  0000 L CNN
+F 1 "SW_Push" V 7495 3248 50  0000 L CNN
+F 2 "" H 7450 3300 50  0001 C CNN
+F 3 "~" H 7450 3300 50  0001 C CNN
+	1    7450 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:VSOURCE V2
+U 1 1 5ECF11E3
+P 8050 2250
+F 0 "V2" H 8278 2296 50  0000 L CNN
+F 1 "dc 5" H 8278 2205 50  0000 L CNN
+F 2 "" H 8050 2250 50  0001 C CNN
+F 3 "~" H 8050 2250 50  0001 C CNN
+	1    8050 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3600 7300 3600
+Wire Wire Line
+	7300 4050 7300 3950
+Wire Wire Line
+	7300 3650 7300 3600
+Wire Wire Line
+	7300 4350 7300 4450
+Wire Wire Line
+	7300 4450 6300 4450
+Wire Wire Line
+	6300 4450 6300 4400
+Wire Wire Line
+	8050 1250 7450 1250
+Wire Wire Line
+	6300 1250 6300 1400
+Wire Wire Line
+	7450 2900 7450 1250
+Wire Wire Line
+	7450 3500 7450 3300
+Connection ~ 7450 1250
+Wire Wire Line
+	6300 1250 7450 1250
+Wire Wire Line
+	8050 1250 8050 1950
+Wire Wire Line
+	8050 2550 8050 4450
+Wire Wire Line
+	8050 4450 7300 4450
+Connection ~ 7300 4450
+Wire Wire Line
+	6900 3500 7450 3500
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-MU U1
+U 1 1 5ED0FD6D
+P 3000 2900
+F 0 "U1" H 2750 1350 50  0000 C CNN
+F 1 "ATmega328P-MU" H 3000 1220 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm" H 3000 2900 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 3000 2900 50  0001 C CNN
+	1    3000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5ED0FD73
+P 4000 4200
+F 0 "R1" H 4070 4246 50  0000 L CNN
+F 1 "R" H 4070 4155 50  0000 L CNN
+F 2 "" V 3930 4200 50  0001 C CNN
+F 3 "~" H 4000 4200 50  0001 C CNN
+	1    4000 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5ED0FD79
+P 4000 3800
+F 0 "D1" V 4100 4000 50  0000 R CNN
+F 1 "LED" V 4000 4050 50  0000 R CNN
+F 2 "" H 4000 3800 50  0001 C CNN
+F 3 "~" H 4000 3800 50  0001 C CNN
+	1    4000 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5ED0FD7F
+P 4250 3950
+F 0 "SW1" V 4204 4098 50  0000 L CNN
+F 1 "SW_Push" V 4295 4098 50  0000 L CNN
+F 2 "" H 4250 4150 50  0001 C CNN
+F 3 "~" H 4250 4150 50  0001 C CNN
+	1    4250 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5ED0FD85
+P 4750 2250
+F 0 "V1" H 4978 2296 50  0000 L CNN
+F 1 "dc 5" H 4978 2205 50  0000 L CNN
+F 2 "" H 4750 2250 50  0001 C CNN
+F 3 "~" H 4750 2250 50  0001 C CNN
+	1    4750 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3600 4000 3600
+Wire Wire Line
+	4000 4050 4000 3950
+Wire Wire Line
+	4000 3650 4000 3600
+Wire Wire Line
+	4000 4350 4000 4450
+Wire Wire Line
+	4000 4450 3000 4450
+Wire Wire Line
+	3000 4450 3000 4400
+Wire Wire Line
+	3000 1250 3000 1400
+Wire Wire Line
+	4750 1250 4750 1950
+Wire Wire Line
+	4750 2550 4750 4450
+Wire Wire Line
+	4750 4450 4250 4450
+Connection ~ 4000 4450
+Wire Wire Line
+	3000 1250 4250 1250
+Wire Wire Line
+	4250 3500 4250 3750
+Wire Wire Line
+	3600 3500 4250 3500
+Wire Wire Line
+	4250 4150 4250 4450
+Connection ~ 4250 4450
+Wire Wire Line
+	4250 4450 4000 4450
+Wire Wire Line
+	4250 3500 4250 1250
+Connection ~ 4250 3500
+Connection ~ 4250 1250
+Wire Wire Line
+	4250 1250 4750 1250
+Wire Wire Line
+	3600 3200 3800 3200
+Wire Wire Line
+	3800 3200 3800 1050
+Wire Wire Line
+	3800 1050 2100 1050
+Wire Wire Line
+	2100 1050 2100 1700
+Wire Wire Line
+	2400 1700 2100 1700
+Connection ~ 2100 1700
+$Comp
+L Switch:SW_Push SWR1
+U 1 1 5ED35A9F
+P 2100 3550
+F 0 "SWR1" V 2146 3502 50  0000 R CNN
+F 1 "RESET" V 2055 3502 50  0000 R CNN
+F 2 "" H 2100 3750 50  0001 C CNN
+F 3 "~" H 2100 3750 50  0001 C CNN
+	1    2100 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2100 1700 2100 3350
+Wire Wire Line
+	2100 3750 2100 4450
+Wire Wire Line
+	2100 4450 3000 4450
+Connection ~ 3000 4450
+Wire Wire Line
+	7100 1050 5400 1050
+Wire Wire Line
+	5400 1050 5400 1700
+Wire Wire Line
+	5700 1700 5400 1700
+Connection ~ 5400 1700
+$Comp
+L Switch:SW_Push SWR2
+U 1 1 5ED3AF7B
+P 5400 3550
+F 0 "SWR2" V 5446 3502 50  0000 R CNN
+F 1 "RESET" V 5355 3502 50  0000 R CNN
+F 2 "" H 5400 3750 50  0001 C CNN
+F 3 "~" H 5400 3750 50  0001 C CNN
+	1    5400 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 1700 5400 3350
+Wire Wire Line
+	5400 3750 5400 4450
+Wire Wire Line
+	5400 4450 6300 4450
+Wire Wire Line
+	6900 3200 7100 3200
+Wire Wire Line
+	7100 3200 7100 1050
+$EndSCHEMATC

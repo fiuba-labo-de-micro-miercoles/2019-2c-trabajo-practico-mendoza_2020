@@ -1,0 +1,28 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp2\codigo\tp2\tp2\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>D:/___fiuba\atmelstudio\studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc</DIR>
+  <DIR>D:\___fiuba\atmelstudio\studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp2\codigo\tp2\tp2\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>D:/___fiuba\atmelstudio\studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc\m328pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp2\codigo\tp2\tp2\Debug\tp2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>tp2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>tp2.map</FILE>
+  <FILE>tp2.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <MAIN><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp2\codigo\tp2\tp2\main.asm</FILE><LINE>27</LINE></MAIN>
+  <start><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp2\codigo\tp2\tp2\main.asm</FILE><LINE>34</LINE></start>
+ </LABELS>
+</ASSEMBLER_INFO>
