@@ -8,7 +8,7 @@
 
 .include "m328pdef.inc"
 
-; Defino mis puertos de salida
+; Defino mis puertos de salida, ciclos de delay
 
 .EQU DD_PORT = DDRD
 .EQU DATA_PORT = PORTD
@@ -40,9 +40,9 @@ main:
 	OUT DD_PORT,R20
 
 start:
-	SBI DATA_PORT, PORTD2
+	SBI DATA_PORT, PORTD2	;prendo y apago de a un LED
 	LDI R22,DELAY
-	D10ms R22,R23,R24
+	D10ms R22,R23,R24		;uso este delay (~200 ms)
 	CBI DATA_PORT, PORTD2
 
 	SBI DATA_PORT, PORTD3
@@ -68,7 +68,7 @@ start:
 	SBI DATA_PORT, PORTD7
 	LDI R22,DELAY
 	D10ms R22,R23,R24
-	CBI DATA_PORT, PORTD7
+	CBI DATA_PORT, PORTD7	;de aca regreso al primer pin
 
 	SBI DATA_PORT, PORTD6
 	LDI R22,DELAY
@@ -90,4 +90,4 @@ start:
 	D10ms R22,R23,R24
 	CBI DATA_PORT, PORTD3
 
-	JMP start
+	JMP start				;reinicio el tren de leds

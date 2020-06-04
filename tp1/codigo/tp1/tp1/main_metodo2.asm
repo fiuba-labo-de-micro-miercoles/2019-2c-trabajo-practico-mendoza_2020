@@ -9,7 +9,7 @@
 
 ;defino variables
 .equ pinled = PC3
-.equ cyc = 1
+.equ cyc = 11
 
 .cseg
 

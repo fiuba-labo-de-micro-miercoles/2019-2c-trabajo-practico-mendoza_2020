@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.7  D:\___fiuba\86.07 Laboratorio de Microprocesadores\avr\projects\tp1\tp1\main_metodo1.asm Wed May 20 23:48:23 2020
+AVRASM ver. 2.2.7  D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp1\codigo\tp1\tp1\main_metodo2.asm Thu Jun 04 15:38:41 2020
 
 
 EQU  SIGNATURE_000 0000001e
@@ -696,7 +696,7 @@ EQU  TWIaddr      00000030
 EQU  SPMRaddr     00000032
 EQU  INT_VECTORS_SIZE 00000034
 EQU  pinled       00000003
-EQU  cyc          00000001
+EQU  cyc          0000000b
 CSEG main         00000002
 CSEG loopled      00000006
 CSEG retardador22 0000000f

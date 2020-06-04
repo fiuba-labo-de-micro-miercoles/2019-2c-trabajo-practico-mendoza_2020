@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.7  D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp2\codigo\tp2\tp2\main.asm Wed May 27 21:12:14 2020
+AVRASM ver. 2.2.7  D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp2\codigo\tp2\tp2\main.asm Thu Jun 04 15:18:07 2020
 
 
 EQU  SIGNATURE_000 0000001e
@@ -701,4 +701,4 @@ EQU  PORT_CONF    0000000a
 EQU  PIN_IN       00000002
 EQU  PIN_OUT      00000003
 CSEG MAIN         00000034
-CSEG start        00000037
+CSEG start        00000036

@@ -15,7 +15,7 @@
     <Name>tp1</Name>
     <RootNamespace>tp1</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
-    <EntryFile>$(MSBuildProjectDirectory)\main_metodo1.asm</EntryFile>
+    <EntryFile>$(MSBuildProjectDirectory)\main_metodo2.asm</EntryFile>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
     <CacheFlash>true</CacheFlash>
