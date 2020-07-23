@@ -1,0 +1,28 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp5\codigo\tp5\tp5\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>D:/___fiuba\atmelstudio\studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc</DIR>
+  <DIR>D:\___fiuba\atmelstudio\studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp5\codigo\tp5\tp5\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp5\codigo\tp5\tp5\m328pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp5\codigo\tp5\tp5\Debug\tp5.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>tp5.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>tp5.map</FILE>
+  <FILE>tp5.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <conf><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp5\codigo\tp5\tp5\main.asm</FILE><LINE>51</LINE></conf>
+  <main><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp5\codigo\tp5\tp5\main.asm</FILE><LINE>68</LINE></main>
+ </LABELS>
+</ASSEMBLER_INFO>

@@ -1,0 +1,393 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5ED0FD85
+P 3350 3750
+F 0 "V1" H 2950 3600 50  0000 L CNN
+F 1 "dc 5" H 3000 4100 50  0000 L CNN
+F 2 "" H 3350 3750 50  0001 C CNN
+F 3 "~" H 3350 3750 50  0001 C CNN
+	1    3350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4450 4250 4400
+$Comp
+L Switch:SW_Push SWR1
+U 1 1 5ED35A9F
+P 6050 4200
+F 0 "SWR1" V 6100 4500 50  0000 R CNN
+F 1 "RESET" V 6000 4500 50  0000 R CNN
+F 2 "" H 6050 4400 50  0001 C CNN
+F 3 "~" H 6050 4400 50  0001 C CNN
+	1    6050 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R RRES1
+U 1 1 5ECFF891
+P 6050 3000
+F 0 "RRES1" H 5750 3100 50  0000 L CNN
+F 1 "10k" H 5850 3000 50  0000 L CNN
+F 2 "" V 5980 3000 50  0001 C CNN
+F 3 "~" H 6050 3000 50  0001 C CNN
+	1    6050 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C CRES1
+U 1 1 5ED00332
+P 6050 3750
+F 0 "CRES1" H 6050 3850 50  0000 L CNN
+F 1 "47n" H 6050 3650 50  0000 L CNN
+F 2 "" H 6088 3600 50  0001 C CNN
+F 3 "~" H 6050 3750 50  0001 C CNN
+	1    6050 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 5ED12155
+P 6000 2150
+F 0 "Y1" V 5954 2281 50  0000 L CNN
+F 1 "16MHz" V 6045 2281 50  0000 L CNN
+F 2 "" H 6000 2150 50  0001 C CNN
+F 3 "~" H 6000 2150 50  0001 C CNN
+	1    6000 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R RCry1
+U 1 1 5ED12FCA
+P 5550 2150
+F 0 "RCry1" H 5620 2196 50  0000 L CNN
+F 1 "10Meg" H 5620 2105 50  0000 L CNN
+F 2 "" V 5480 2150 50  0001 C CNN
+F 3 "~" H 5550 2150 50  0001 C CNN
+	1    5550 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C CCry11
+U 1 1 5ED14846
+P 6300 2400
+F 0 "CCry11" V 6048 2400 50  0000 C CNN
+F 1 "20p" V 6139 2400 50  0000 C CNN
+F 2 "" H 6338 2250 50  0001 C CNN
+F 3 "~" H 6300 2400 50  0001 C CNN
+	1    6300 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C CCry12
+U 1 1 5ED151D9
+P 6300 1900
+F 0 "CCry12" V 6048 1900 50  0000 C CNN
+F 1 "20p" V 6139 1900 50  0000 C CNN
+F 2 "" H 6338 1750 50  0001 C CNN
+F 3 "~" H 6300 1900 50  0001 C CNN
+	1    6300 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6150 2400 6000 2400
+Wire Wire Line
+	5550 2400 5550 2300
+Wire Wire Line
+	6150 1900 6000 1900
+Wire Wire Line
+	5550 1900 5550 2000
+Wire Wire Line
+	6000 2000 6000 1900
+Connection ~ 6000 1900
+Wire Wire Line
+	6000 1900 5550 1900
+Wire Wire Line
+	6000 2300 6000 2400
+Connection ~ 6000 2400
+Wire Wire Line
+	6000 2400 5550 2400
+Wire Wire Line
+	6450 2400 6550 2400
+Wire Wire Line
+	6550 2400 6550 1900
+Wire Wire Line
+	6550 1900 6450 1900
+Wire Wire Line
+	3350 4050 3350 4450
+Wire Wire Line
+	3350 3450 3350 3250
+Text GLabel 3350 3250 1    50   Input ~ 0
+Vcc
+Text GLabel 4250 1300 1    50   Input ~ 0
+Vcc
+Wire Wire Line
+	6050 4000 6050 3900
+Wire Wire Line
+	6050 4400 6050 4450
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-MU U1
+U 1 1 5ED0FD6D
+P 4250 2900
+F 0 "U1" H 4000 1300 50  0000 C CNN
+F 1 "ATmega328P-MU" H 4250 1220 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm" H 4250 2900 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 4250 2900 50  0001 C CNN
+	1    4250 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 1700 0    50   Input ~ 0
+AREF
+Text GLabel 6050 2850 1    50   Input ~ 0
+AREF
+Wire Wire Line
+	5200 2300 5200 1900
+Wire Wire Line
+	5200 1900 5550 1900
+Connection ~ 5550 1900
+$Comp
+L power:GND #PWR?
+U 1 1 5ED8A0A3
+P 3350 4450
+F 0 "#PWR?" H 3350 4200 50  0001 C CNN
+F 1 "GND" H 3355 4277 50  0000 C CNN
+F 2 "" H 3350 4450 50  0001 C CNN
+F 3 "" H 3350 4450 50  0001 C CNN
+	1    3350 4450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3350 4450
+Wire Wire Line
+	3350 4450 4250 4450
+Wire Wire Line
+	4250 1400 4350 1400
+Wire Wire Line
+	4250 1400 4250 1300
+Connection ~ 4250 1400
+Wire Notes Line
+	6800 1700 6800 2500
+Wire Notes Line
+	6800 2500 5150 2500
+Wire Notes Line
+	5150 2500 5150 1700
+Wire Notes Line
+	5150 1700 6800 1700
+Text Notes 6350 1700 0    50   ~ 0
+Ext. Crystal
+Wire Notes Line
+	5650 2800 6300 2800
+Wire Notes Line
+	6300 2800 6300 4400
+Wire Notes Line
+	6300 4400 5900 4400
+Wire Notes Line
+	5900 4400 5900 3100
+Wire Notes Line
+	5900 3100 5650 3100
+Wire Notes Line
+	5650 3100 5650 2800
+Text Notes 5550 2800 0    50   ~ 0
+Ext. Reset
+Connection ~ 4250 4450
+Connection ~ 5550 2400
+Connection ~ 6550 2400
+Wire Wire Line
+	6050 3150 6050 3200
+Connection ~ 6050 4450
+Wire Wire Line
+	6050 4450 6550 4450
+Wire Wire Line
+	4850 2400 5550 2400
+Wire Wire Line
+	4850 2300 5200 2300
+Wire Wire Line
+	4250 4450 5200 4450
+$Comp
+L Device:R_POT RV?
+U 1 1 5F1C0DF0
+P 5200 2800
+F 0 "RV?" V 5085 2800 50  0000 C CNN
+F 1 "R_POT" V 4994 2800 50  0000 C CNN
+F 2 "" H 5200 2800 50  0001 C CNN
+F 3 "~" H 5200 2800 50  0001 C CNN
+	1    5200 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 3200 4850 3200
+Connection ~ 6050 3200
+Wire Wire Line
+	6050 3200 6050 3600
+$Comp
+L power:GND #PWR?
+U 1 1 5F1C77B1
+P 5000 2900
+F 0 "#PWR?" H 5000 2650 50  0001 C CNN
+F 1 "GND" H 5005 2727 50  0000 C CNN
+F 2 "" H 5000 2900 50  0001 C CNN
+F 3 "" H 5000 2900 50  0001 C CNN
+	1    5000 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 5350 2800 2    50   Input ~ 0
+Vcc
+$Comp
+L Device:LED D0
+U 1 1 5F1CACEC
+P 5000 3400
+F 0 "D0" V 5039 3282 50  0001 R CNN
+F 1 "LED" V 4948 3282 50  0001 R CNN
+F 2 "" H 5000 3400 50  0001 C CNN
+F 3 "~" H 5000 3400 50  0001 C CNN
+	1    5000 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R0
+U 1 1 5F1CC3EE
+P 5200 4300
+F 0 "R0" H 5270 4346 50  0000 L CNN
+F 1 "330" H 5250 4250 50  0000 L CNN
+F 2 "" V 5130 4300 50  0001 C CNN
+F 3 "~" H 5200 4300 50  0001 C CNN
+	1    5200 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F1D1328
+P 5000 3500
+F 0 "D?" V 5039 3382 50  0001 R CNN
+F 1 "LED" V 4948 3382 50  0001 R CNN
+F 2 "" H 5000 3500 50  0001 C CNN
+F 3 "~" H 5000 3500 50  0001 C CNN
+	1    5000 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F1D21FA
+P 5000 3600
+F 0 "D?" V 5039 3482 50  0001 R CNN
+F 1 "LED" V 4948 3482 50  0001 R CNN
+F 2 "" H 5000 3600 50  0001 C CNN
+F 3 "~" H 5000 3600 50  0001 C CNN
+	1    5000 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F1D250C
+P 5000 3700
+F 0 "D?" V 5039 3582 50  0001 R CNN
+F 1 "LED" V 4948 3582 50  0001 R CNN
+F 2 "" H 5000 3700 50  0001 C CNN
+F 3 "~" H 5000 3700 50  0001 C CNN
+	1    5000 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F1D2819
+P 5000 3800
+F 0 "D?" V 5039 3682 50  0001 R CNN
+F 1 "LED" V 4948 3682 50  0001 R CNN
+F 2 "" H 5000 3800 50  0001 C CNN
+F 3 "~" H 5000 3800 50  0001 C CNN
+	1    5000 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F1D2A70
+P 5000 3900
+F 0 "D?" V 5039 3782 50  0001 R CNN
+F 1 "LED" V 4948 3782 50  0001 R CNN
+F 2 "" H 5000 3900 50  0001 C CNN
+F 3 "~" H 5000 3900 50  0001 C CNN
+	1    5000 3900
+	-1   0    0    1   
+$EndComp
+Connection ~ 5200 4450
+Wire Wire Line
+	5200 4450 5450 4450
+$Comp
+L Device:R R1
+U 1 1 5F1D4CCD
+P 5450 4300
+F 0 "R1" H 5520 4346 50  0000 L CNN
+F 1 "330" H 5500 4250 50  0000 L CNN
+F 2 "" V 5380 4300 50  0001 C CNN
+F 3 "~" H 5450 4300 50  0001 C CNN
+	1    5450 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 5450 4450
+Wire Wire Line
+	5450 4450 5700 4450
+$Comp
+L Device:R R2
+U 1 1 5F1D4F94
+P 5700 4300
+F 0 "R2" H 5770 4346 50  0000 L CNN
+F 1 "330" H 5750 4250 50  0000 L CNN
+F 2 "" V 5630 4300 50  0001 C CNN
+F 3 "~" H 5700 4300 50  0001 C CNN
+	1    5700 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 5700 4450
+Wire Wire Line
+	5700 4450 6050 4450
+Wire Wire Line
+	5150 3900 5200 3900
+Wire Wire Line
+	5200 3900 5200 4150
+Wire Wire Line
+	5150 3800 5450 3800
+Wire Wire Line
+	5450 3800 5450 4150
+Wire Wire Line
+	5150 3700 5450 3700
+Wire Wire Line
+	5450 3700 5450 3800
+Connection ~ 5450 3800
+Wire Wire Line
+	5150 3600 5700 3600
+Wire Wire Line
+	5700 3600 5700 4150
+Wire Wire Line
+	5150 3500 5700 3500
+Wire Wire Line
+	5700 3500 5700 3600
+Connection ~ 5700 3600
+Wire Wire Line
+	5150 3400 5700 3400
+Wire Wire Line
+	5700 3400 5700 3500
+Connection ~ 5700 3500
+Wire Wire Line
+	5000 2900 5000 2800
+Wire Wire Line
+	5000 2800 5050 2800
+Wire Wire Line
+	5200 2650 5200 2600
+Wire Wire Line
+	5200 2600 4850 2600
+Wire Wire Line
+	6550 2400 6550 4450
+$EndSCHEMATC
