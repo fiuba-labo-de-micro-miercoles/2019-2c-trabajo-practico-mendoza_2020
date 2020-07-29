@@ -1,0 +1,35 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp6\codigo\tp6\tp6\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>D:/___fiuba\atmelstudio\studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc</DIR>
+  <DIR>D:\___fiuba\atmelstudio\studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp6\codigo\tp6\tp6\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp6\codigo\tp6\tp6\m328pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp6\codigo\tp6\tp6\Debug\tp6.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>tp6.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>tp6.map</FILE>
+  <FILE>tp6.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <conf><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp6\codigo\tp6\tp6\main.asm</FILE><LINE>59</LINE></conf>
+  <isr_toggle><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp6\codigo\tp6\tp6\main.asm</FILE><LINE>115</LINE></isr_toggle>
+  <main><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp6\codigo\tp6\tp6\main.asm</FILE><LINE>78</LINE></main>
+  <mfix><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp6\codigo\tp6\tp6\main.asm</FILE><LINE>90</LINE></mfix>
+  <m64><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp6\codigo\tp6\tp6\main.asm</FILE><LINE>96</LINE></m64>
+  <m256><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp6\codigo\tp6\tp6\main.asm</FILE><LINE>102</LINE></m256>
+  <m1024><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp6\codigo\tp6\tp6\main.asm</FILE><LINE>108</LINE></m1024>
+  <led_off><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp6\codigo\tp6\tp6\main.asm</FILE><LINE>121</LINE></led_off>
+  <end><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp6\codigo\tp6\tp6\main.asm</FILE><LINE>119</LINE></end>
+ </LABELS>
+</ASSEMBLER_INFO>
