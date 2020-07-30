@@ -12,7 +12,9 @@
 
 .EQU DD_PORT = DDRD
 .EQU DATA_PORT = PORTD
-.equ DELAY = 21
+.EQU DELAY = 21
+.DEF aux = R16
+.DEF counter = R17
 
 .MACRO D10ms ; [reg_cycles], [reg_aux1], [reg_aux2]			~9.98 ms
 delay:
@@ -40,54 +42,23 @@ main:
 	OUT DD_PORT,R20
 
 start:
-	SBI DATA_PORT, PORTD2	;prendo y apago de a un LED
+	LDI aux, 0b00000100		; prendo y apago de a un LED mediante shifts
+	OUT PORTD, aux			; prendo el primero
+	LDI counter, 5
+loop_forw:
+	LSL aux					; shift left
 	LDI R22,DELAY
-	D10ms R22,R23,R24		;uso este delay (~200 ms)
-	CBI DATA_PORT, PORTD2
-
-	SBI DATA_PORT, PORTD3
+	D10ms R22,R23,R24		;delay (~200 ms)
+	OUT PORTD, aux
+	DEC counter
+	BRNE loop_forw
+	LDI counter, 5
+loop_back:
+	LSR	aux
 	LDI R22,DELAY
-	D10ms R22,R23,R24
-	CBI DATA_PORT, PORTD3
-
-	SBI DATA_PORT, PORTD4
-	LDI R22,DELAY
-	D10ms R22,R23,R24
-	CBI DATA_PORT, PORTD4
-
-	SBI DATA_PORT, PORTD5
-	LDI R22,DELAY
-	D10ms R22,R23,R24
-	CBI DATA_PORT, PORTD5
-
-	SBI DATA_PORT, PORTD6
-	LDI R22,DELAY
-	D10ms R22,R23,R24
-	CBI DATA_PORT, PORTD6
-
-	SBI DATA_PORT, PORTD7
-	LDI R22,DELAY
-	D10ms R22,R23,R24
-	CBI DATA_PORT, PORTD7	;de aca regreso al primer pin
-
-	SBI DATA_PORT, PORTD6
-	LDI R22,DELAY
-	D10ms R22,R23,R24
-	CBI DATA_PORT, PORTD6
-
-	SBI DATA_PORT, PORTD5
-	LDI R22,DELAY
-	D10ms R22,R23,R24
-	CBI DATA_PORT, PORTD5
-
-	SBI DATA_PORT, PORTD4
-	LDI R22,DELAY
-	D10ms R22,R23,R24
-	CBI DATA_PORT, PORTD4
-
-	SBI DATA_PORT, PORTD3
-	LDI R22,DELAY
-	D10ms R22,R23,R24
-	CBI DATA_PORT, PORTD3
-
-	JMP start				;reinicio el tren de leds
+	D10ms R22,R23,R24		;delay (~200 ms)
+	OUT PORTD, aux
+	DEC counter
+	BRNE loop_back
+	LDI	counter, 5
+	RJMP loop_forw

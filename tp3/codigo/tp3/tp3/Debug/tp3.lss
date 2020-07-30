@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.7  D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp3\codigo\tp3\tp3\main.asm Wed Jun 03 19:03:15 2020
+AVRASM ver. 2.2.7  D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp3\codigo\tp3\tp3\main.asm Thu Jul 30 15:09:22 2020
 
 [builtin](2): Including file 'D:/___fiuba\atmelstudio\studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc\m328pdef.inc'
 D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp3\codigo\tp3\tp3\main.asm(9): Including file 'D:/___fiuba\atmelstudio\studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc\m328pdef.inc'
@@ -1039,11 +1039,13 @@ D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp3\codig
                                  
                                  ; ***** END OF FILE ******************************************************
                                  
-                                 ; Defino mis puertos de salida
+                                 ; Defino mis puertos de salida, ciclos de delay
                                  
                                  .EQU DD_PORT = DDRD
                                  .EQU DATA_PORT = PORTD
-                                 .equ DELAY = 21
+                                 .EQU DELAY = 21
+                                 .DEF aux = R16
+                                 .DEF counter = R17
                                  
                                  .MACRO D10ms ; [reg_cycles], [reg_aux1], [reg_aux2]			~9.98 ms
                                  delay:
@@ -1071,126 +1073,25 @@ D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp3\codig
 000035 b94a                      	OUT DD_PORT,R20
                                  
                                  start:
-000036 9a5a                      	SBI DATA_PORT, PORTD2
-000037 e165                      	LDI R22,DELAY
-000038 2788
-000039 ec7f
-00003a 957a
-00003b f7f1
-00003c 958a
-00003d f7d9
-00003e 956a
-00003f f7c1                      	D10ms R22,R23,R24
-000040 985a                      	CBI DATA_PORT, PORTD2
-                                 
-000041 9a5b                      	SBI DATA_PORT, PORTD3
-000042 e165                      	LDI R22,DELAY
-000043 2788
-000044 ec7f
-000045 957a
-000046 f7f1
-000047 958a
-000048 f7d9
-000049 956a
-00004a f7c1                      	D10ms R22,R23,R24
-00004b 985b                      	CBI DATA_PORT, PORTD3
-                                 
-00004c 9a5c                      	SBI DATA_PORT, PORTD4
-00004d e165                      	LDI R22,DELAY
-00004e 2788
-00004f ec7f
-000050 957a
-000051 f7f1
-000052 958a
-000053 f7d9
-000054 956a
-000055 f7c1                      	D10ms R22,R23,R24
-000056 985c                      	CBI DATA_PORT, PORTD4
-                                 
-000057 9a5d                      	SBI DATA_PORT, PORTD5
-000058 e165                      	LDI R22,DELAY
-000059 2788
-00005a ec7f
-00005b 957a
-00005c f7f1
-00005d 958a
-00005e f7d9
-00005f 956a
-000060 f7c1                      	D10ms R22,R23,R24
-000061 985d                      	CBI DATA_PORT, PORTD5
-                                 
-000062 9a5e                      	SBI DATA_PORT, PORTD6
-000063 e165                      	LDI R22,DELAY
-000064 2788
-000065 ec7f
-000066 957a
-000067 f7f1
-000068 958a
-000069 f7d9
-00006a 956a
-00006b f7c1                      	D10ms R22,R23,R24
-00006c 985e                      	CBI DATA_PORT, PORTD6
-                                 
-00006d 9a5f                      	SBI DATA_PORT, PORTD7
-00006e e165                      	LDI R22,DELAY
-00006f 2788
-000070 ec7f
-000071 957a
-000072 f7f1
-000073 958a
-000074 f7d9
-000075 956a
-000076 f7c1                      	D10ms R22,R23,R24
-000077 985f                      	CBI DATA_PORT, PORTD7
-                                 
-000078 9a5e                      	SBI DATA_PORT, PORTD6
-000079 e165                      	LDI R22,DELAY
-00007a 2788
-00007b ec7f
-00007c 957a
-00007d f7f1
-00007e 958a
-00007f f7d9
-000080 956a
-000081 f7c1                      	D10ms R22,R23,R24
-000082 985e                      	CBI DATA_PORT, PORTD6
-                                 
-000083 9a5d                      	SBI DATA_PORT, PORTD5
-000084 e165                      	LDI R22,DELAY
-000085 2788
-000086 ec7f
-000087 957a
-000088 f7f1
-000089 958a
-00008a f7d9
-00008b 956a
-00008c f7c1                      	D10ms R22,R23,R24
-00008d 985d                      	CBI DATA_PORT, PORTD5
-                                 
-00008e 9a5c                      	SBI DATA_PORT, PORTD4
-00008f e165                      	LDI R22,DELAY
-000090 2788
-000091 ec7f
-000092 957a
-000093 f7f1
-000094 958a
-000095 f7d9
-000096 956a
-000097 f7c1                      	D10ms R22,R23,R24
-000098 985c                      	CBI DATA_PORT, PORTD4
-                                 
-000099 9a5b                      	SBI DATA_PORT, PORTD3
-00009a e165                      	LDI R22,DELAY
-00009b 2788
-00009c ec7f
-00009d 957a
-00009e f7f1
-00009f 958a
-0000a0 f7d9
-0000a1 956a
-0000a2 f7c1                      	D10ms R22,R23,R24
-0000a3 985b                      	CBI DATA_PORT, PORTD3
-                                 
+000036 e004                      	LDI aux, 0b00000100		; prendo y apago de a un LED mediante shifts
+000037 b90b                      	OUT PORTD, aux			; prendo el primero
+000038 e015                      	LDI counter, 5
+                                 loop_forw:
+000039 0f00                      	LSL aux					; shift left
+00003a e165                      	LDI R22,DELAY
+                                 ;	D10ms R22,R23,R24		;delay (~200 ms)
+00003b b90b                      	OUT PORTD, aux
+00003c 951a                      	DEC counter
+00003d f7d9                      	BRNE loop_forw
+00003e e015                      	LDI counter, 5
+                                 loop_back:
+00003f 9506                      	LSR	aux
+000040 e165                      	LDI R22,DELAY
+                                 ;	D10ms R22,R23,R24		;delay (~200 ms)
+000041 b90b                      	OUT PORTD, aux
+000042 951a                      	DEC counter
+000043 f7d9                      	BRNE loop_back
+000044 e015                      	LDI	counter, 5
 
 
 RESOURCE USE INFORMATION
@@ -1210,8 +1111,8 @@ counted separately from r26..r31 here.
 "ATmega328P" register use summary:
 x  :   0 y  :   0 z  :   0 r0 :   0 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
 r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:   0 r16:   0 r17:   0 r18:   0 r19:   0 r20:   2 
-r21:   0 r22:  20 r23:  20 r24:  20 r25:   0 r26:   0 r27:   0 r28:   0 
+r13:   0 r14:   0 r15:   0 r16:   6 r17:   5 r18:   0 r19:   0 r20:   2 
+r21:   0 r22:   2 r23:   0 r24:   0 r25:   0 r26:   0 r27:   0 r28:   0 
 r29:   0 r30:   0 r31:   0 
 Registers used: 4 out of 35 (11.4%)
 
@@ -1220,17 +1121,17 @@ Registers used: 4 out of 35 (11.4%)
 andi  :   0 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
 brcc  :   0 brcs  :   0 break :   0 breq  :   0 brge  :   0 brhc  :   0 
 brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   0 brmi  :   0 
-brne  :  30 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
-brvs  :   0 bset  :   0 bst   :   0 call  :   0 cbi   :  10 cbr   :   0 
-clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :  10 cls   :   0 
+brne  :   2 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
+brvs  :   0 bset  :   0 bst   :   0 call  :   0 cbi   :   0 cbr   :   0 
+clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :   0 cls   :   0 
 clt   :   0 clv   :   0 clz   :   0 com   :   0 cp    :   0 cpc   :   0 
-cpi   :   0 cpse  :   0 dec   :  30 eor   :   0 fmul  :   0 fmuls :   0 
-fmulsu:   0 icall :   0 ijmp  :   0 in    :   0 inc   :   0 jmp   :   2 
-ld    :   0 ldd   :   0 ldi   :  21 lds   :   0 lpm   :   0 lsl   :   0 
-lsr   :   0 mov   :   0 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
-neg   :   0 nop   :   0 or    :   0 ori   :   0 out   :   1 pop   :   0 
-push  :   0 rcall :   0 ret   :   0 reti  :   0 rjmp  :   0 rol   :   0 
-ror   :   0 sbc   :   0 sbci  :   0 sbi   :  10 sbic  :   0 sbis  :   0 
+cpi   :   0 cpse  :   0 dec   :   2 eor   :   0 fmul  :   0 fmuls :   0 
+fmulsu:   0 icall :   0 ijmp  :   0 in    :   0 inc   :   0 jmp   :   1 
+ld    :   0 ldd   :   0 ldi   :   7 lds   :   0 lpm   :   0 lsl   :   1 
+lsr   :   1 mov   :   0 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
+neg   :   0 nop   :   0 or    :   0 ori   :   0 out   :   4 pop   :   0 
+push  :   0 rcall :   0 ret   :   0 reti  :   0 rjmp  :   1 rol   :   0 
+ror   :   0 sbc   :   0 sbci  :   0 sbi   :   0 sbic  :   0 sbis  :   0 
 sbiw  :   0 sbr   :   0 sbrc  :   0 sbrs  :   0 sec   :   0 seh   :   0 
 sei   :   0 sen   :   0 ser   :   0 ses   :   0 set   :   0 sev   :   0 
 sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :   0 
@@ -1240,7 +1141,7 @@ Instructions used: 8 out of 113 (7.1%)
 "ATmega328P" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x00014c    232      0    232   32768   0.7%
+[.cseg] 0x000000 0x00008c     40      0     40   32768   0.1%
 [.dseg] 0x000100 0x000100      0      0      0    2048   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    1024   0.0%
 

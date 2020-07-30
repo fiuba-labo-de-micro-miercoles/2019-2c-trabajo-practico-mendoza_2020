@@ -22,7 +22,9 @@
   <FILE>tp3.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <MAIN><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp3\codigo\tp3\tp3\main.asm</FILE><LINE>37</LINE></MAIN>
-  <start><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp3\codigo\tp3\tp3\main.asm</FILE><LINE>42</LINE></start>
+  <MAIN><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp3\codigo\tp3\tp3\main.asm</FILE><LINE>39</LINE></MAIN>
+  <start><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp3\codigo\tp3\tp3\main.asm</FILE><LINE>44</LINE></start>
+  <loop_forw><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp3\codigo\tp3\tp3\main.asm</FILE><LINE>48</LINE></loop_forw>
+  <loop_back><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp3\codigo\tp3\tp3\main.asm</FILE><LINE>56</LINE></loop_back>
  </LABELS>
 </ASSEMBLER_INFO>

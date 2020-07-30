@@ -86,6 +86,13 @@ main:
 	BREQ	m256
 	CPI		aux, mode1024
 	BREQ	m1024
+	;	Delay de 5 ms para evitar pulsos espurios del pulsador
+	LDI		R18, 104
+    LDI		R19, 229
+L1: DEC		R19
+    BRNE	L1
+    DEC		R18
+    BRNE	L1
     RJMP	main
 mfix:
 	LDS		aux, TCCR1B
