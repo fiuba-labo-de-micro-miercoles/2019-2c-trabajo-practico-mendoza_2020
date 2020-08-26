@@ -24,7 +24,7 @@
  <LABELS>
   <conf><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp8\codigo\tp8\tp8\main_sin_interrupciones.asm</FILE><LINE>85</LINE></conf>
   <main><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp8\codigo\tp8\tp8\main_sin_interrupciones.asm</FILE><LINE>101</LINE></main>
-  <MSJ><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp8\codigo\tp8\tp8\main_sin_interrupciones.asm</FILE><LINE>157</LINE></MSJ>
+  <MSJ><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp8\codigo\tp8\tp8\main_sin_interrupciones.asm</FILE><LINE>156</LINE></MSJ>
   <transmit><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp8\codigo\tp8\tp8\main_sin_interrupciones.asm</FILE><LINE>112</LINE></transmit>
   <wait><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp8\codigo\tp8\tp8\main_sin_interrupciones.asm</FILE><LINE>104</LINE></wait>
   <toggle_led><FILE>D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp8\codigo\tp8\tp8\main_sin_interrupciones.asm</FILE><LINE>126</LINE></toggle_led>

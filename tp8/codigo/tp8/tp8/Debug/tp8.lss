@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.7  D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp8\codigo\tp8\tp8\main_sin_interrupciones.asm Tue Aug 18 23:22:22 2020
+AVRASM ver. 2.2.7  D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp8\codigo\tp8\tp8\main_sin_interrupciones.asm Sat Aug 22 14:38:31 2020
 
 [builtin](2): Including file 'D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp8\codigo\tp8\tp8\m328pdef.inc'
 D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp8\codigo\tp8\tp8\main_sin_interrupciones.asm(35): Including file 'D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp8\codigo\tp8\tp8\m328pdef.inc'
@@ -1188,42 +1188,42 @@ D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp8\codig
 000078 940c 006b                 	JMP		led_on
                                  
                                  
-                                 
-000500 2a20
-000501 2a2a
-000502 6f48
-000503 616c
-000504 4c20
-000505 6261
-000506 206f
-000507 6564
-000508 4d20
-000509 6369
-00050a 6f72
+000500 2a2a
+000501 482a
+000502 6c6f
+000503 2061
+000504 614c
+000505 6f62
+000506 6420
+000507 2065
+000508 694d
+000509 7263
+00050a 2a6f
 00050b 2a2a
-00050c 3a2a
-00050d 7345
-00050e 7263
-00050f 6269
-000510 2061
-000511 2c31
-000512 3220
-000513 202c
-000514 2033
-000515 206f
-000516 2034
-000517 6170
-000518 6172
-000519 6320
-00051a 6e6f
-00051b 7274
-00051c 6c6f
-00051d 7261
-00051e 6c20
-00051f 736f
-000520 4c20
-000521 4445
-000522 0d73
+00050c 450a
+00050d 6373
+00050e 6972
+00050f 6162
+000510 3120
+000511 202c
+000512 2c32
+000513 3320
+000514 6f20
+000515 3420
+000516 7020
+000517 7261
+000518 2061
+000519 6f63
+00051a 746e
+00051b 6f72
+00051c 616c
+00051d 2072
+00051e 6f6c
+00051f 2073
+000520 454c
+000521 7344
+000522 0a0d
+D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp8\codigo\tp8\tp8\main_sin_interrupciones.asm(156): warning: .cseg .db misalignment - padding zero byte
 
 
 RESOURCE USE INFORMATION
@@ -1277,4 +1277,4 @@ Segment   Begin    End      Code   Data   Used    Size   Use%
 [.dseg] 0x000100 0x000100      0      0      0    2048   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    1024   0.0%
 
-Assembly complete, 0 errors, 0 warnings
+Assembly complete, 0 errors, 1 warnings

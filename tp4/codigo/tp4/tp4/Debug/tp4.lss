@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.7  D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp4\codigo\tp4\tp4\main.asm Tue Jul 07 23:05:30 2020
+AVRASM ver. 2.2.7  D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp4\codigo\tp4\tp4\main.asm Thu Aug 20 18:54:01 2020
 
 [builtin](2): Including file 'D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp4\codigo\tp4\tp4\m328pdef.inc'
 D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp4\codigo\tp4\tp4\main.asm(8): Including file 'D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp4\codigo\tp4\tp4\m328pdef.inc'
@@ -1153,7 +1153,6 @@ D:\___fiuba\8607_labo_de_micros\tps\2020-1c-trabajos-practicos-mendoza\tp4\codig
 00005c 950a                      	DEC		aux
 00005d f751                      	BRNE	loop_leds
 00005e 9a28                      	SBI		PORTB,PB0						; Cuando termino prendo el primer LED nuevamente
-00005f 9518                      	RETI
 
 
 RESOURCE USE INFORMATION
